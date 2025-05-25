@@ -1,5 +1,5 @@
 {
-    "name": "usernotnull/tall-toasts",
+    "name": "daredloco/tall-toasts",
     "type": "library",
     "description": "A Toast notification library for the Laravel TALL stack. You can push notifications from the backend or frontend to render customizable toasts with almost zero footprint on the published CSS/JS!",
     "keywords": [
