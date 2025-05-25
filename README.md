@@ -221,7 +221,7 @@ To properly dispatch toasts from inside your livewire components, **add the trai
 
 ```php
 use Livewire\Component;
-use Daredloco\Toast\Concerns\WireToast;
+use Usernotnull\Toast\Concerns\WireToast;
 
 class DemoComponent extends Component
 {
@@ -262,7 +262,7 @@ functionality.
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Daredloco\Toast\ToastServiceProvider" --tag="tall-toasts-config"
+php artisan vendor:publish --provider="Usernotnull\Toast\ToastServiceProvider" --tag="tall-toasts-config"
 ```
 
 These are the default contents of the published config file:
@@ -289,7 +289,7 @@ return [
 You can publish and change all views in this package:
 
 ```bash
-php artisan vendor:publish --provider="Daredloco\Toast\ToastServiceProvider" --tag="tall-toasts-views"
+php artisan vendor:publish --provider="Usernotnull\Toast\ToastServiceProvider" --tag="tall-toasts-views"
 ```
 
 The published views can be found and changed in `resources/views/vendor/tall-toast/`.

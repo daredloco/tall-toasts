@@ -1,6 +1,6 @@
 <?php
 
-namespace Daredloco\Toast\Controllers;
+namespace Usernotnull\Toast\Controllers;
 
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\File;

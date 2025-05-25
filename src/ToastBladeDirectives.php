@@ -1,11 +1,11 @@
 <?php
 
-namespace Daredloco\Toast;
+namespace Usernotnull\Toast;
 
 class ToastBladeDirectives
 {
     public static function toastScripts(string $expression): string
     {
-        return '{!! \Daredloco\Toast\ToastManager::scripts(' . $expression . ') !!}';
+        return '{!! \Usernotnull\Toast\ToastManager::scripts(' . $expression . ') !!}';
     }
 }

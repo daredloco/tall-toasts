@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Daredloco\Toast\Tests;
+namespace Usernotnull\Toast\Tests;
 
 use Illuminate\Foundation\Testing\Concerns\InteractsWithViews;
 use Illuminate\Support\Facades\Route;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Daredloco\Toast\ToastServiceProvider;
+use Usernotnull\Toast\ToastServiceProvider;
 
 class TestCase extends Orchestra
 {

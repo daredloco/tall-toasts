@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Daredloco\Toast;
+namespace Usernotnull\Toast;
 
 class Notification
 {

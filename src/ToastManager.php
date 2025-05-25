@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Daredloco\Toast;
+namespace Usernotnull\Toast;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\Facades\File;
 
 /**
- * @see \Daredloco\Toast\Toast
+ * @see \Usernotnull\Toast\Toast
  */
 class ToastManager extends Facade
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Daredloco\Toast\Concerns;
+namespace Usernotnull\Toast\Concerns;
 
-use Daredloco\Toast\ToastManager;
+use Usernotnull\Toast\ToastManager;
 
 trait WireToast
 {

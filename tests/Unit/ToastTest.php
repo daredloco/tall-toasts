@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Daredloco\Toast\Notification;
-use Daredloco\Toast\NotificationType;
-use Daredloco\Toast\ToastManager;
+use Usernotnull\Toast\Notification;
+use Usernotnull\Toast\NotificationType;
+use Usernotnull\Toast\ToastManager;
 
 it('pushes and pulls toasts via session', function () {
     expect(ToastManager::hasPendingToasts())->toBeFalse();

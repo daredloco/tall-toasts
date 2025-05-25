@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Livewire\Livewire;
-use Daredloco\Toast\Livewire\ToastComponent;
-use Daredloco\Toast\Notification;
-use Daredloco\Toast\NotificationType;
-use Daredloco\Toast\ToastManager;
+use Usernotnull\Toast\Livewire\ToastComponent;
+use Usernotnull\Toast\Notification;
+use Usernotnull\Toast\NotificationType;
+use Usernotnull\Toast\ToastManager;
 
 use function PHPUnit\Framework\assertEquals;
 use function PHPUnit\Framework\assertFalse;

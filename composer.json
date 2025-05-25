@@ -1,5 +1,5 @@
 {
-    "name": "daredloco/tall-toasts",
+    "name": "usernotnull/tall-toasts",
     "type": "library",
     "description": "A Toast notification library for the Laravel TALL stack. You can push notifications from the backend or frontend to render customizable toasts with almost zero footprint on the published CSS/JS!",
     "keywords": [
@@ -15,7 +15,7 @@
         "alpinejs",
         "tall-stack"
     ],
-    "homepage": "https://github.com/daredloco/tall-toasts",
+    "homepage": "https://github.com/usernotnull/tall-toasts",
     "license": "MIT",
     "authors": [
         {
@@ -53,12 +53,12 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Daredloco\\Toast\\": "src"
+            "Usernotnull\\Toast\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Daredloco\\Toast\\Tests\\": "tests"
+            "Usernotnull\\Toast\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -76,7 +76,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Daredloco\\Toast\\ToastServiceProvider"
+                "Usernotnull\\Toast\\ToastServiceProvider"
             ],
             "aliases": {
                 "Toast": "ToastManager"

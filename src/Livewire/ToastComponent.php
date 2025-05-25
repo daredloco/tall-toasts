@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Daredloco\Toast\Livewire;
+namespace Usernotnull\Toast\Livewire;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -10,7 +10,7 @@ use Illuminate\Contracts\View\Factory as ViewFactory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\App;
 use Livewire\Component;
-use Daredloco\Toast\ToastManager;
+use Usernotnull\Toast\ToastManager;
 
 class ToastComponent extends Component
 {
