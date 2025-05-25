@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Usernotnull\Toast\Toast;
+use Daredloco\Toast\Toast;
 
 if (! function_exists('toast')) {
     function toast(): Toast

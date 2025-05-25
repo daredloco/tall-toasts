@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 use Livewire\Component;
-use Usernotnull\Toast\Concerns\WireToast;
-use Usernotnull\Toast\Tests\TestCase;
+use Daredloco\Toast\Concerns\WireToast;
+use Daredloco\Toast\Tests\TestCase;
 
 uses(TestCase::class)->in('Feature', 'Unit');
 

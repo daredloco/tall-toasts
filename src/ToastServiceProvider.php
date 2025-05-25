@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Usernotnull\Toast;
+namespace Daredloco\Toast;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route as RouteFacade;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Usernotnull\Toast\Controllers\JavaScriptAssets;
-use Usernotnull\Toast\Livewire\ToastComponent;
+use Daredloco\Toast\Controllers\JavaScriptAssets;
+use Daredloco\Toast\Livewire\ToastComponent;
 
 class ToastServiceProvider extends PackageServiceProvider
 {

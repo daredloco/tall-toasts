@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Usernotnull\Toast;
+namespace Daredloco\Toast;
 
 use function is_string;
 

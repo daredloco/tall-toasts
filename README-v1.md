@@ -131,7 +131,7 @@ You can call the above toast helper from controllers, blade views, and component
 
 ```php
 use Livewire\Component;
-use Usernotnull\Toast\Concerns\WireToast;
+use Daredloco\Toast\Concerns\WireToast;
 
 class DemoComponent extends Component
 {
@@ -291,7 +291,7 @@ functionality.
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --provider="Usernotnull\Toast\ToastServiceProvider" --tag="tall-toasts-config"
+php artisan vendor:publish --provider="Daredloco\Toast\ToastServiceProvider" --tag="tall-toasts-config"
 ```
 
 These are the default contents of the published config file:
@@ -318,7 +318,7 @@ return [
 You can publish and change all views in this package:
 
 ```bash
-php artisan vendor:publish --provider="Usernotnull\Toast\ToastServiceProvider" --tag="tall-toasts-views"
+php artisan vendor:publish --provider="Daredloco\Toast\ToastServiceProvider" --tag="tall-toasts-views"
 ```
 
 The published views can be found and changed in `resources/views/vendor/tall-toast/`.
