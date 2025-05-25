@@ -1,5 +1,5 @@
 includes:
-    - ./vendor/nunomaduro/larastan/extension.neon
+    - ./vendor/larastan/larastan/extension.neon
 
 parameters:
     paths:
@@ -16,7 +16,7 @@ parameters:
         - '#Call to an undefined method Illuminate\\Support\\HigherOrder#'
         - '#Call to an undefined static method#'
         - '#Parameter (\#)(\d) \$callback of method Illuminate\\Container\\Container::call\(\) expects \(callable\(\): (.*)#'
-        - '#Parameter (\#)(\d) \$callback of function view expects view-string|null, string given#'
+        - '#Parameter (\#)(\d) \$callback of function view expects view-string\|null, string given#'
 
     reportUnmatchedIgnoredErrors: false
     checkOctaneCompatibility: true
