@@ -22,16 +22,6 @@ class ToastServiceProvider extends PackageServiceProvider
             ->hasViews();
     }
 
-    public function packageBooted(): void
-    {
-        RouteFacade::get('/toast/tall-toasts.js', [JavaScriptAssets::class, 'source']);
-        RouteFacade::get('/toast/tall-toasts.js.map', [JavaScriptAssets::class, 'maps']);
-
-        Blade::directive('toastScripts', [ToastBladeDirectives::class, 'toastScripts']);
-
-        Livewire::component('toasts', ToastComponent::class);
-    }
-
     public function registeringPackage(): void
     {
         $this->app->singleton(Toast::class);
@@ -43,6 +33,15 @@ class ToastServiceProvider extends PackageServiceProvider
 
     public function boot()
     {
+        parent::boot();
+
+        RouteFacade::get('/toast/tall-toasts.js', [JavaScriptAssets::class, 'source']);
+        RouteFacade::get('/toast/tall-toasts.js.map', [JavaScriptAssets::class, 'maps']);
+
+        Blade::directive('toastScripts', [ToastBladeDirectives::class, 'toastScripts']);
+
+        Livewire::component('toasts', ToastComponent::class);
+
         $this->publishes([
             __DIR__.'/../resources/js/tall-toasts.js' => resource_path('js/vendor/tall-toasts.js'),
         ], 'tall-toasts-js');
