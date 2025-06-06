@@ -40,4 +40,11 @@ class ToastServiceProvider extends PackageServiceProvider
         $this->app->singleton(ToastManager::class);
         $this->app->alias(ToastManager::class, 'toast.manager');
     }
+
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__.'/../resources/js/tall-toasts.js' => resource_path('js/vendor/tall-toasts.js'),
+        ], 'tall-toasts-js');
+    }
 }

@@ -157,6 +157,19 @@ composer require usernotnull/tall-toasts
 
 ## Setup
 
+### Docker ready
+
+To make this package work in docker, call
+```bash
+php artisan vendor:publish --tag=tall-toasts-js
+```
+
+and in app.js
+```js
+import ToastComponent from './vendor/tall-toasts.js'
+Alpine.plugin(ToastComponent)
+```
+
 ### TailwindCSS
 
 Build your CSS as you usually do, ie
@@ -185,11 +198,18 @@ This way, Tailwind JIT will include the classes used in this library in your CSS
 
 ### Registering Toast with AlpineJS
 
+To make this package work in docker, call
+```bash
+php artisan vendor:publish --tag=tall-toasts-js
+```
+
 Add the Toast component in your `app.js`:
 
 ```js
 import {Alpine, Livewire} from '../../vendor/livewire/livewire/dist/livewire.esm';
 import ToastComponent from '../../vendor/usernotnull/tall-toasts/resources/js/tall-toasts'
+//or if using docker:
+//import ToastComponent from './vendor/tall-toasts.js'
 
 Alpine.plugin(ToastComponent)
 
